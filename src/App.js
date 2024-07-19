@@ -1,14 +1,33 @@
-import React from 'react';
-import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useRouteMatch,
+  Router,
+} from "react-router-dom";
+import EmailList from "./EmailList";
+import Mail from "./Mail";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Sidebar/>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <div className="app_body">
+          <Sidebar />
+          <Routes>
+            <Route path="mail/" element={<Mail/>}/>
+            <Route path="/" element={<EmailList/>}/>
+              
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

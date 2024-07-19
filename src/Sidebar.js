@@ -3,10 +3,11 @@ import './Sidebar.css'
 import { Button, IconButton } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import SidebarOption from './SidebarOption';
-import { AccessTime, Duo, ExpandMore, Inbox, LabelImportant, NearMe, Note, Person, Phone, Star } from '@mui/icons-material';
+import { AccessTime, ExpandMore, Inbox, LabelImportant, NearMe, Note, Star } from '@mui/icons-material';
 import PersonIcon from '@mui/icons-material/Person'
 import PhoneIcon from '@mui/icons-material/Phone'
 import DuoIcon from '@mui/icons-material/Duo'
+
 
 function Sidebar() {
   return (
